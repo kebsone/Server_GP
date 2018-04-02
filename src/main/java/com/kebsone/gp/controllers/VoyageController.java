@@ -35,7 +35,7 @@ public class VoyageController {
 	 * @return on travel 
 	 */
 	@GetMapping("/voyage/{id}")
-	public Voyage getVoyage(@PathVariable Integer id) {
+	public Voyage  origin(@PathVariable Integer id) {
 		return voyageRepository.findById(id).get();
 	}
 	
